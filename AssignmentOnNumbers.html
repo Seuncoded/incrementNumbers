@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    body{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+       
+    }
+    .shn {
+        height: 70px;
+        width: 50px;
+        border: 1px solid rgb(101, 23, 23);
+        text-align: center;
+        border-radius: 50px;
+
+    }
+
+    button{
+        padding: 20px 100px;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: 900;
+        border-radius: 10px;
+        background-color: hsl(35, 67%, 44%);
+    }
+</style>
+
+<body>
+    <div class="shn">
+        <h1 id="showNumber"></h1>
+    </div>
+
+<div class="btn">
+    <button onclick="addUpNumber()">Add Up +</button>
+    <button onclick="subDownNumber()">Reduce The Number -</button>
+</div>
+</body>
+
+</html>
+<script>
+
+    let num = 0;
+    let addUp = document.getElementById('showNumber').innerHTML = num;
+    console.log(addUp);
+
+
+    function addUpNumber() {
+
+        document.getElementById('showNumber').innerHTML = num++;
+
+    }
+
+    function subDownNumber() {
+
+        document.getElementById('showNumber').innerHTML = num--;
+
+    }
+
+
+
+</script>
